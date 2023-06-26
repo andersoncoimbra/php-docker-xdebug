@@ -1,0 +1,78 @@
+version: 1
+creator: xdebug 3.2.1 (PHP 8.2.7)
+cmd: /var/www/html/index.php
+part: 1
+positions: line
+
+events: Time_(10ns) Memory_(bytes)
+
+fl=(2) /var/www/html/FlatArray.php
+fn=(1) require::/var/www/html/FlatArray.php
+1 7646 0
+
+fl=(1) php:internal
+fn=(2) php::array_merge
+16 2367 216
+
+fl=(1)
+fn=(2)
+16 38 376
+
+fl=(1)
+fn=(2)
+16 25 376
+
+fl=(2)
+fn=(3) FlatArray->flattenArray
+13 992 0
+cfl=(1)
+cfn=(2)
+calls=1 0 0
+16 2367 216
+cfl=(1)
+cfn=(2)
+calls=1 0 0
+16 38 376
+cfl=(1)
+cfn=(2)
+calls=1 0 0
+16 25 376
+
+fl=(2)
+fn=(4) FlatArray->__construct
+7 1875 0
+cfl=(2)
+cfn=(3)
+calls=1 0 0
+10 3421 376
+
+fl=(1)
+fn=(5) php::ArrayIterator->__construct
+22 1446 320
+
+fl=(2)
+fn=(6) FlatArray->getIterator
+20 2567 184
+cfl=(1)
+cfn=(5)
+calls=1 0 0
+22 1446 320
+
+fl=(3) /var/www/html/index.php
+fn=(7) {main}
+1 168775 3040
+cfl=(2)
+cfn=(1)
+calls=1 0 0
+3 7646 0
+cfl=(2)
+cfn=(4)
+calls=1 0 0
+11 5296 376
+cfl=(2)
+cfn=(6)
+calls=1 0 0
+13 4013 504
+
+summary: 215829 435808
+
